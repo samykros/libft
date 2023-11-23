@@ -25,7 +25,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t len)
 			i++;
 		return (i);
 	}
-	while (src[i] && i < len - 1)
+	while (src[i] && i < len - 1) // len -1 because of how arrays count
 	{
 		dst[j] = src[i];
 		i++;
